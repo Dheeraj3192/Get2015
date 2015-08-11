@@ -1,35 +1,35 @@
- package RemoveDuplicate;
-
-//import java.util.Scanner;
+package RemoveDuplicate;
 class RemoveDuplicate
 {
 	int[] removeDuplicate(int input[])
 	{
-		int flag[]=new int[10];
-		int size=0;
-		int output[]=new int[10];
-		//System.out.println("Reduced array is \n");
-		for(int index=0;index<input.length;index++)
+		int index=0,inputSize;
+		boolean isduplicate=false;
+		inputSize = input.length;
+		int reducedArray[] = new int[inputSize];
+		for(int count=0; count< inputSize; count++)
 		{
-			if(flag[input[index]]==0)
+			for(int digitArray2=0 ; digitArray2 <= index ; digitArray2++)
 			{
-			
-				output[size]=input[index];
-				//System.out.println(output[index]+"\n");
-				flag[input[index]]=1;
-				size++;
+				if(reducedArray[digitArray2]==input[count])
+				{
+					isduplicate=true;
+					break;
+				}
+			}
+			if(!isduplicate)
+			{
+				reducedArray[index++]= input[count];
 			}
 		}
-		
-		return output;
-		
-		
+		return reducedArray;
 	}
- 
 	public static void main(String args[])throws Exception
 	{  
-  		  
-		
-	
+  		RemoveDuplicate rd=new RemoveDuplicate();
+  		int array[] ={2,5,4,6,3,8,5,9,3,3,6,3,9,0};
+		int reducedArray[] = rd.removeDuplicate(array);
+		for(index=0;index<reducedArray.length;index++)
+			System.out.println(reduced[index]);
  	}  
 } 
