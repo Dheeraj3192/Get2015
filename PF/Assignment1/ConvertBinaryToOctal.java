@@ -54,7 +54,9 @@ public class ConvertBinaryToOctal {
 		}
 		public static void main(String args[])
 		{
-			
+			ConvertBinaryToOctal obj=new ConvertBinaryToOctal();
+			int output=obj.convertBinaryToOctal(11010);
+			System.out.println("Binary to octal is"+output);
 		}
 			
 
