@@ -3,11 +3,12 @@ package SortedArray;
 public class SortedArray {
 	public static void main(String args[])
 	{
+		SortedArray obj=new SortedArray();
+		int a[]={5,4,3,2,1};
+		int output=obj.isSorted(a);
+		System.out.println("output is "+output);
 		
 	}
-	
-	
-	
 	public  int isSorted(int[] a)
 	{
 			int flag=0;
