@@ -11,8 +11,6 @@ public class LongestSequence {
 			int output[]=obj.longestSequence(input);
 			for(int index=0;index<output.length;index++)
 				System.out.println(output[index]);
-		
-		assertArrayEquals(expected, actual);
 			
 		}
 		int[] longestSequence(int input[])
