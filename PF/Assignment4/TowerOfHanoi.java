@@ -19,6 +19,11 @@ public class TowerOfHanoi
 		BufferedReader input=new BufferedReader(new InputStreamReader(System.in));
 		System.out.println("Enter no of disc\t");
 		noOfDisk=Integer.parseInt(input.readLine());
+		if(noOfDisk<=0)
+		{
+			System.out.println("Please enter valid disk no");
+			System.exit(1);
+		}
 		TowerOfHanoi towerOfHanoi=new TowerOfHanoi(noOfDisk);
 		List<String> diskMovementList=towerOfHanoi.towerOfHanoi( "A", "B", "C",noOfDisk);
 		for(int index=0;index<diskMovementList.size();index++)
