@@ -9,7 +9,19 @@ public class NQuenes {
 	public static void main(String[] args) 
 	{
 		NQuenes nQueens =new NQuenes();
-		nQueens.solveNQueens(4);
+		boolean board[][]=nQueens.solveNQueens(4);
+		for(int row=0;row<board.length;row++)
+		{
+			int isTrue=0;
+			for(int col=0;col<board[row].length;col++)
+			{
+				if(board[row][col])
+					isTrue=1;
+				System.out.print(isTrue+"\t");
+				isTrue=0;
+			}
+			System.out.println();
+		}
 	}
 	/*Ending of main method*/
 	
