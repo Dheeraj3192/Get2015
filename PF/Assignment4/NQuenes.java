@@ -1,3 +1,7 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
 /**
  * @author Dheeraj
  *Program to Solve the N queens problem where N>1
@@ -6,10 +10,14 @@
 public class NQuenes {
 	
 	/*Starting of main method*/
-	public static void main(String[] args) 
+	public static void main(String[] args)throws IOException
 	{
 		NQuenes nQueens =new NQuenes();
-		boolean board[][]=nQueens.solveNQueens(4);
+		int noOfQueens;
+		BufferedReader input=new BufferedReader(new InputStreamReader(System.in));
+		System.out.println("Enter no of Queens\t");
+		noOfQueens=Integer.parseInt(input.readLine());
+		boolean board[][]=nQueens.solveNQueens(noOfQueens);
 		for(int row=0;row<board.length;row++)
 		{
 			int isTrue=0;
@@ -96,8 +104,6 @@ public class NQuenes {
 	      System.out.println("Solution does not exist");
 	      System.exit(1);
 	    }
-	  //  printSolution(board);
-	    //return true;
 	    return board;
 	}
 	
