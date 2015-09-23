@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<vehicle>
+	<Car>
+		<makeYear> 2010 </makeYear>
+		<model> EcoSport </model>
+		<engineInCC> 2000 </engineInCC>
+		<fuelCapacity> 50 </fuelCapacity>
+		<milage> 22 </milage>
+		<price> 850009 </price>
+		<roadTax> 4000 </roadTax>
+		<createdBy> Dheeraj </createdBy>
+		<createdTime> 23/04/2009 </createdTime>
+		<hasAC>Yes</hasAC>
+		<hasPowerSteering>Yes</hasPowerSteering>
+		<hasAccessoryKit>Yes</hasAccessoryKit>
+	</Car>
+	<Bike>
+		<makeYear> 2011 </makeYear>
+		<model> Royal Enfield </model>
+		<engineInCC> 350 </engineInCC>
+		<fuelCapacity> 15 </fuelCapacity>
+		<milage> 20 </milage>
+		<price> 1000000 </price>
+		<roadTax> 2000 </roadTax>
+		<createdBy> Girdhari </createdBy>
+		<createdTime> 21/09/2012 </createdTime>
+		<isSelfStart>Yes</isSelfStart>
+		<helmetPrice>1500</helmetPrice>
+	</Bike>	
+	<Car>
+		<makeYear> 2005 </makeYear>
+		<model> Ford </model>
+		<engineInCC> 5000 </engineInCC>
+		<fuelCapacity> 500 </fuelCapacity>
+		<milage> 20 </milage>
+		<price> 900009 </price>
+		<roadTax> 3500 </roadTax>
+		<createdBy> Banwari </createdBy>
+		<createdTime> 10/01/2000 </createdTime>
+		<hasAC>Yes</hasAC>
+		<hasPowerSteering>Yes</hasPowerSteering>
+		<hasAccessoryKit>Yes</hasAccessoryKit>
+	</Car>
+	<Bike>
+		<makeYear> 2013 </makeYear>
+		<model> Bajaj </model>
+		<engineInCC> 150 </engineInCC>
+		<fuelCapacity> 20 </fuelCapacity>
+		<milage> 60 </milage>
+		<price> 60000 </price>
+		<roadTax> 1000 </roadTax>
+		<createdBy> Pulkit </createdBy>
+		<createdTime> 25/07/2010</createdTime>
+		<isSelfStart>No</isSelfStart>
+		<helmetPrice>1500</helmetPrice>
+	</Bike>
+</vehicle>
