@@ -1,0 +1,26 @@
+<!--Div  To be Drag -->
+#divdrag{
+	
+	width: 200px;
+	height: 200px;
+	margin: 10px;
+	padding: 10px;
+	border: 1px solid #aaaaa0;
+	background-color : yellow;
+}
+
+<!--Div  To be Drop -->
+
+#divdrop
+{
+
+	width: 100px;
+	height: 100px;
+	margin: 10px;
+	padding: 10px;
+	border: 1px solid #aaaaaa;
+	background-color : red;
+	
+}
+
+
