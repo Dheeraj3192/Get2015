@@ -1,0 +1,43 @@
+<HTML>
+	<HEAD>
+		<TITLE>FORM WITH VALIDATIONS</TITLE>
+		<LINK rel="stylesheet" href="./cssfile/HTML-Assignment-2.2.css">
+	|</HEAD>
+	<BODY>
+		<header>
+			<h1>Welcome to Employee Registration</h1>
+		</header>
+		<article>
+			<form>
+				<table>
+					<tr>
+						<td><label for="name">Enter Your Name: </label></td><td><Input type="text" id="name"name="name" pattern="[a-zA-Z]{2,}[a-zA-Z ]{0,}"required ></td>
+					</tr>
+					<tr>
+						<td><label for="email">Enter Your email: </label></td><td><Input type="email" id="email"name="email" pattern="[a-zA-Z0-9]{1,}[._][0,][a-zA-Z0-9]{1,}[@][a-zA-Z0-9]{1,}[.][a-zA-Z0-9]{1,}"required></td>
+					</tr>
+					<tr>
+						<td><label for="dob">Enter Your DOB: </label></td><td><Input type="date" id="dob"name="dob" required ></td>	
+					</tr>
+					<tr>
+						<td><label for="experience">Select Your Experience: </label></td><td><Input type="range" id="experience"name="experience" min="0" max="20"required ></td>
+					</tr>
+					<tr>
+						<td><label for="listBox">Select Your Field: </label></td><td><Input list="field" idname="field" required >
+							<datalist id="field">
+								<option value="Management">Management</option>
+								<option value="Engineering">Engineering</option>
+								<option value="Arts">Arts</option>
+							</datalist></td>
+					</tr>
+					<tr>
+						<td colspan = "2"><Input type="submit" Value="Submit" class="form-submit"></tr>
+					</tr>
+				</table>
+			</form>
+		</article>
+		<footer>
+			Copyright (c) to  <a href="http://www.metacube.com">Metacube Software Pvt. Ltd.</a> From 2015 - 20xx</a>
+		</footer>
+	</BODY>
+</HTML>

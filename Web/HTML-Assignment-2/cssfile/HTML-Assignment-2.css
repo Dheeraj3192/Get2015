@@ -1,0 +1,31 @@
+header {
+	margin:5px;
+	text-align: center;
+}
+
+nav ul li{
+	display: inline;
+	padding-left:10px;
+}
+
+nav ul {
+	text-align:center;
+}
+
+article {
+	margin:5px;
+	border:5px dotted pink;
+	padding:5px;
+}
+aside {
+	margin:5px;
+	padding:10px;
+	border: 5px solid #abcdef;
+	text-align:center;
+	background-color:#c0c0c0;
+}
+section {
+	margin:5px;
+	padding:5px;
+	border: 5px dashed blue;
+}
