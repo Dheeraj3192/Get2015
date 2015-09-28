@@ -1,0 +1,216 @@
+body {
+    background-image : url("../images/background.jpg");
+	background-repeat : repeat;
+	padding : 20px;
+}
+
+#wrapper { 
+	margin:20px;
+	background-color : #fff;
+	border-radius : 10px 10px 10px 10px;
+
+	
+}
+
+#header {
+	height:80px;
+    text-align:center;
+    padding-top:20px;	
+	font-weight:bold;
+	color :#009ed8;
+	background-color : #bad5ef;	
+	border-radius : 10px 10px 0px 0px;
+}
+
+#header h1,h3 {
+	margin : 0px;
+}
+#navigation {
+	height : 30px ;
+	background:#9BB2B8;
+	padding-top: 10px;
+}
+#navigation ul {
+	margin:0px;
+	padding-left: 5px;
+
+}
+a {
+	text-decoration : none;
+	color : black;
+	font-weight : strong;
+}
+#navigation ul li {
+	display:inline;
+	padding :10px;
+	border-radius : 5px;
+}
+#navigation ul li:hover {
+	background:#9BB288;
+	border :3px solid red;
+	
+}
+
+#container {
+	background:white;
+	margin:5px;
+	height:460px;
+}
+
+#left-pane {
+	margin-top : 10px;
+	margin-left: 10px;
+	height : 400px;
+	width : 15% ;
+	float:left;
+}
+
+#left-pane1 {
+	background-color :#CCCCFF;
+	border-radius : 10px;
+	Padding-top : 1px;
+	padding-bottom : 1px;
+		
+
+}
+#left-pane1 ul {
+	
+	padding :0px;
+	margin: 10px;
+	border-radius : 10px;
+}
+#left-pane1 ul li 
+{
+	list-style : none;
+	
+	
+} 
+#left-pane1 h3  {
+	margin :5px;
+	background-color :#6666FF;
+	padding : 5px;
+	border-radius : 10px;
+ }
+ 
+ #left-pane1 h4 {
+	margin : 5px;
+	padding : 3px 0px  5px 5px;
+	background-color :#6666FF;
+	border-radius : 10px;
+}
+
+#left-pane2 {
+	background-color :#CCCCFF;
+	margin-top : 20px;
+	border-radius : 10px;
+	padding :10px;
+}
+
+#left-pane2 h3{
+	padding : 5px;
+	background-color :#6666FF;
+	border-radius : 5px;
+}
+#left-pane2 p {
+	margin : 5px;
+}
+
+#middle-pane {
+	height : auto ;
+	width : 63%;
+	float : left ;
+	margin: 10px 1% 0px;
+	background-color : white;
+}
+#middle-pane h2 {
+	margin : 20px;
+	padding : 0px;
+	font-weight: bold;
+}
+
+#middle-pane h4 {
+	padding : 0px;
+	margin : 20px;
+}
+
+#middle-pane .image {
+	margin : 20px;
+	background-image: url("../images/streetstudy.jpg");
+	height:350px;
+	width:100%;
+	background-repeat: no-repeat;
+}
+
+#middle-pane p {
+	margin : 10px;
+	width :  90%;
+}
+
+#right-pane {
+	margin:  0px;
+	height : 400px ;
+	width : 18%;
+	float : left;
+	background-color: white;
+}
+
+#right-pane1 {
+	background-color: #fed0c0;
+	width :90%;
+	padding : 5px;
+	border-radius : 10px;
+	margin-left : 5px;
+}
+
+#right-pane1 ul {
+	list-style : none;
+	padding-left : 10px;
+	margin : 0px;
+		
+}
+#right-pane1 h3 {
+	background-color: #abcdef;
+	border-radius : 10px;
+	padding : 3px 10px;
+	margin-bottom : 10px;
+}
+
+
+.submit {
+	background-color: #abcdef;
+	border-width: 0px;
+	border-radius:5px;
+	width:40%;
+	height:25px;
+	margin: 0px 10px ;
+}
+
+
+#right-pane2 {
+	background-color :#CCCCFF;
+	margin : 20px 5px 5px 5px;
+	border-radius : 10px;
+	padding :10px;
+}
+
+#right-pane2 h3{
+	padding : 5px;
+	background-color :#6666FF;
+	border-radius : 5px;
+}
+#right-pane2 p {
+	margin : 5px;
+}
+ 
+#footer {
+	clear : both;
+	background:#c0bcb1;
+	height: 50px;
+	text-align : center;
+	border-radius : 0px 0px 10px 10px;
+	
+}
+#footer a {
+	padding:5px;
+	text-decoration : none;
+}

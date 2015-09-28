@@ -1,0 +1,38 @@
+.container { 
+			position:absolute;
+			margin : 20px;
+			padding : 20px 10px 10px;
+			background-color:#b2cde8;
+			width:90%;
+}
+			
+.form {
+		background-color : #ffffff;
+		width : 50 %;
+		padding : 10px;
+		overflow: auto;
+}
+
+.header {
+			padding : 20px 0px 10px 10px;
+			border : 3px solid #118afc;
+			color :#009ed8;
+			background-color : #bad5ef;
+			font-size :30px;
+			font-weight: bold;
+}
+		
+.image-show {
+				margin-top : 20px;
+				background-color :#000000;
+				border : 3px solid white;
+				height : 200px;
+				width : 200px ;
+				float:left;
+				box-shadow : 0px  0px 10px;
+}
+ .content { 
+			margin : 0px 20px 20px;
+			padding : 20px ;
+			float:left;
+}
