@@ -1,0 +1,25 @@
+.body {
+	width : 90%;
+	margin : 10px;
+}
+
+@-webkit-keyframes change {
+    0%   {background-color: #abcdef; left:0%; top:0px;}
+    25%  {background-color: #abcfff; left:20%; top:525px;border-radius:0px 0px;}
+    50%  {background-color: #abffff; left:40%; top:0px;}
+    75%  {background-color: green; left:60%; top:525px;}
+    100% {background-color: red; left:80%; top:0px;}
+}
+
+
+.container {
+	width: 200px;
+    height: 200px;
+	border-radius:100px 100px;
+    margin: 10px;
+	position: relative;
+    background-color: red;
+    animation-name: change;
+    animation-duration: 10s;
+    animation-iteration-count: 3;
+}
