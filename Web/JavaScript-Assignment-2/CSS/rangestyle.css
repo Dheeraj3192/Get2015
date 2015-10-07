@@ -1,0 +1,48 @@
+
+#TotalRow {
+	width : 140px;
+}
+#inputtable {
+		border:3px solid black;
+		margin: 0px auto;
+		margin-top: 20px;
+		border-collapse: collapse;
+}
+		
+#displaytable {
+	border:1px solid black;
+	margin: 0px auto;
+	margin-top: 20px;
+	border-collapse: collapse;
+	
+}
+		
+p {
+	margin-left:650px;
+	margin-top:20px;
+}
+
+
+		
+tr {
+	border: 1px solid black;
+}
+		
+.red {
+	background-color:red;
+	width:46px;
+	height:20px;
+	border: 0px black;
+}
+		
+.notred {
+	width:46px;
+	height:20px;
+	border: 0px black;
+}
+		
+.name {
+	height:20px;
+	padding:4px;
+	border-right: 3px solid black;
+}
