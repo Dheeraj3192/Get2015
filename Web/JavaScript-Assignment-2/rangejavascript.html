@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JAVA SCRIPT 2</title>
+		<script type="text/javascript" src="./JS/rangescript.js"></script>
+		<link rel="stylesheet" type="text/css" href="./CSS/rangestyle.css"></link>
+	</head>
+	<body>
+		<p>	<input type="number" id="TotalRow" min="1" max="50" placeholder="Enter number of rows "  onkeypress="return isNumber(event)">
+			<input type="button" id="printbutton" value="Draw Table" onclick="printtable()" >
+			<input type="button" id="resetbutton" value="Reset All" onclick="resetAll()" disabled>
+		</p>
+		<form >
+			<table id="inputtable" ></table>
+			<table id="displaytable" ></table>
+		</form>
+	</body>
+</html>
