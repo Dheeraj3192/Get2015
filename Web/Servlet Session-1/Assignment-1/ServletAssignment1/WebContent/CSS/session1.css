@@ -1,0 +1,25 @@
+
+body {
+	background-color: #FFFF99;
+	padding : 100px;
+}
+
+table {
+	margin : 10px 30%;
+
+}
+h1 {
+	margin : 20px 35%;
+}
+#check {
+	margin-left: 50px;
+}
+
+
+label[id$="error"] {
+	color : red;
+}
+
+#submit {
+	margin-left: 30%;
+}

@@ -1,0 +1,83 @@
+<html>
+	<head>
+		<title>Registration Form</title>
+		<script type="text/javascript" src="./JS/session1.js">
+		</script>
+		<link rel="stylesheet" type="text/css" href="./CSS/session1.css" >
+	</head>
+	<body>
+		<h1>Registration Form</h1>
+		<form id="myform" action="Validation" method="post">
+			<table>
+			<tr>
+				<td>First Name *</td> 
+				<td><input type="text" id="first"  maxlength="15" name="FirstName" placeholder="Enter first name"></td>
+				<td><label id="first-error" >min 3 and max 20 </label></td>
+			</tr>
+			<tr>
+				<td>Last Name *</td> 
+				<td><input type="text" id="last"  maxlength="15" name="LastName" placeholder="Enter last name"></td>
+				<td><label id="last-error" >min 3 and max 20 </label></td>
+			</tr>
+			<tr>
+				<td>Password *</td>
+				<td><input type="password" id="password"  maxlength="15" name="Password" placeholder="Enter password min 8"></td>
+				<td><label id="password-error" >min 8 and max 15</label></td>
+			</tr>
+			<tr>
+				<td>Re-Enter Password *</td>
+				<td><input type="password" id="confirm"   maxlength="15" name="Confirm" placeholder="Re enter password"></td>
+				<td><label id="confirm-error" > </label></td>
+			</tr>
+			<tr>
+				<td>Enter Age *</td>
+				<td><input type="text" name="Age" id="age"placeholder="Enter age min 18"></td>
+				<td><label id="age-error" >should between 18 to 100 </label></td>
+			</tr>
+			<tr>
+				<td>State *</td> 
+				<td>
+					<select id="state" name="State" onchange="createCity()">
+						<option>Select State</option>
+						<option value="Rajsthan">Rajasthan</option>
+						<option value="MP">Madhay Pradesh</option>
+						<option value="Maharastra">Maharastra</option>
+						<option value="UP">Uttar Pradesh</option>
+					</select>
+				</td>
+				<td><label id="state-error" > </label></td>
+			</tr>
+			<tr>
+				<td>City *</td> 
+				<td>
+					<select id="city" name="City">
+						<option>Select City</option>
+					</select>
+				</td>
+				<td><label id="city-error" > </label></td>
+			</tr>
+			<tr>
+				<td>Address *</td> 
+				<td><textarea id="address" rows="3" cols="20" maxlength="50" name="Address" placeholder="Enter full address"></textarea></td>
+				<td><label id="address-error" > min 20 max 50</label></td>
+			</tr>
+			<tr>
+				
+				<td colspan="3">
+					<input type="checkbox" id="check" onChange="activateSubmit()" >
+					<label for="check">I Accept All </label><a href="#">Terms & Condition</a>
+				</td>
+			</tr>
+			
+			
+			<tr>
+				<td colspan="3">
+					<input type="submit" value="Create" id="submit" disabled>
+				</td>
+			</tr>
+			</table>
+		</form>
+		
+		
+	</body>
+</html>
