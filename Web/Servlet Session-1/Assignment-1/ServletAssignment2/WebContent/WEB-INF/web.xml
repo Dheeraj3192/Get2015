@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:web="http://xmlns.jcp.org/xml/ns/javaee">
+  <servlet>
+    <servlet-name>Validation</servlet-name>
+    <servlet-class>com.servlets.Validation</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Validation</servlet-name>
+    <url-pattern>/Validation</url-pattern>
+  </servlet-mapping>
+</web-app>
