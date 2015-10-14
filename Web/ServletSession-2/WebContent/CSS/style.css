@@ -1,0 +1,74 @@
+#error {
+	color: red;
+}
+a{
+	text-decoration: none;
+}
+
+body {
+	background-color: lightgrey;
+}
+
+fieldset {
+	width: 43%;
+	height: 80%;
+	margin: 0 auto;
+	margin-top: 3%;
+	background-color: #CC99FF;
+	padding: 1%;
+	border: 4px groove(internal value);
+	border-radius: 10px;
+}
+
+legend {
+	font-size: 26px;
+	font-weight: bold;
+}
+
+table {
+	margin: 7%;
+}
+
+td {
+	font-size: 22px;
+}
+
+.text {
+	margin: 3%;
+	text-align: right;
+	font-weight: bold;
+}
+
+.field {
+	margin: 3%;
+	height: 70%;
+	width: 100%;
+	border: 2px solid white;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.fieldcheck {
+	margin: 3%;
+	height: 70%;
+	width: 5%;
+	border: 2px solid white;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.fieldarea {
+	margin: 3%;
+	width: 300px;
+	border: 2px solid white;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.button {
+	margin-top: 4%;
+	width: 25%;
+	height: 80%;
+	font-size: 16px;
+	font-weight: bold;
+}
