@@ -1,7 +1,4 @@
-/**
- * @author Girdhari
- * Class AnnotationRunner for demonstration of annotations in java
- */
+
 package assignment3;
 
 /* Starting of class AnnotationRunner */
