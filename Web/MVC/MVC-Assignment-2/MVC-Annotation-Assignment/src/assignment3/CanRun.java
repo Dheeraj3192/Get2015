@@ -1,7 +1,3 @@
-/**
- * @author Girdhari
- * Annotation for annotation assignment
- */
 
 package assignment3;
 
