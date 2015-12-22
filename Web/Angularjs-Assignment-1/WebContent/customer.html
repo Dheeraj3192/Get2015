@@ -1,0 +1,128 @@
+<html ng-app="customermanager">
+<head>
+<title>Customers Page</title>
+<link
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"
+	rel="stylesheet">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/angular-ui/0.4.0/angular-ui.min.js"></script>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script
+	src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="apps/app.js"></script>
+<script src="apps/controller/controller.js"></script>
+<link rel="stylesheet" href="css/custom.css">
+
+
+</head>
+<body ng-controller="customermanagement">
+	<div class="container">
+		<h1>Customers</h1>
+		<ul class="nav nav-pills">
+			<li ><button ng-class="{'active':mode==1}"  ng-click="mode=1"
+					class="btn btn-default">
+					<span class="glyphicon glyphicon-th-large"></span> Card View
+				</button></li>
+			<li ><button ng-class="{'active':mode==2}" ng-click="mode=2"
+					class="btn btn-default">
+					<span class="glyphicon glyphicon-list"></span> List View
+				</button></li>
+			<li><button data-toggle="modal" data-target="#myModal" class="btn btn-default"><span
+					class="glyphicon glyphicon-plus"></span> Add Customers</button></li>
+			<li>
+				<div class="form-inline">
+					<label> Filter: <input type="text" class="form-control"	ng-model="searchFilter"></label>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div>
+
+		<!-- Modal -->
+		<div id="myModal" class="modal fade" role="dialog">
+			<div class="modal-dialog">
+				<!-- Modal content-->
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">Add Customers</h4>
+					</div>
+					<form role="form"class="modal-body">
+						<div ng-show="showMessage"ng-class="isSuccessful ? 'alert alert-success' : 'alert alert-danger'">
+							<strong>{{messageCode}}</strong>  {{message}}
+						</div>
+						<div class="form-group">
+							<label> First Name <input type="text"
+								ng-model="customer.fname" class="form-control" required>
+							</label>
+						</div>
+						<div class="form-group">
+							<label> Last Name <input type="text"
+								ng-model="customer.lname" class="form-control" required>
+							</label>
+						</div>
+						<div class="form-group">
+							<label> Email <input type="text"
+								ng-model="customer.email" class="form-control" required>
+							</label>
+						</div>
+						<div class="form-group">
+							<label> Address <textarea ng-model="customer.address"
+									class="form-control" required></textarea>
+							</label>
+						</div>
+						<div class="form-group">
+							<label> Number Of Orders <input type="number" min="0"
+								class="form-control" ng-model="customer.orders" required>
+							</label>
+						</div>
+						<input type="button" class="btn btn-primary"
+							ng-click="newcustomer()" Value="Add New Customer">
+
+					</form>
+
+				</div>
+			</div>
+		</div>
+		<div class="container customerlist">
+			<div class="panel panel-info" id="panel{{$index}}" ng-class="{'col-lg-10':mode==2, 'col-lg-4':mode==1}" 
+			ng-repeat="customer in customers  | filter:searchFilter">
+				<div data-toggle="modal" data-target="#detailModal" ng-click="setDetails(customer)">
+					<button type="button" class="close" data-target="panel{{$index}}"	data-dismiss="alert" ng-click="deletecustomer($index)">
+					<span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+					</button>
+					<div class="panel-heading">
+						<strong>{{customer.fname}}  {{customer.lname}}</strong>
+					</div>
+					<div class="panel-body">
+						<strong>Customer Id :</strong> {{$index+1}}<br /> <strong>Address
+							:</strong> {{customer.address}}<br /> <strong>Orders :</strong> <a
+							href="#">{{customer.orders}}</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="detailModal" class="modal fade" role="dialog">
+			<div class="modal-dialog">
+				<!-- Modal content-->
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">Details </h4>
+					</div>
+					<div class="modal-body">
+						<h1>{{detail.fname+' '+detail.lname}}<br></h1>
+						Total Orders {{detail.orders}}
+						Email : {{detail.email}}
+						Address is : {{detail.address}}
+					</div>
+
+				</div>
+			</div>
+		</div>
+		
+	</div>
+</body>
+</html>
