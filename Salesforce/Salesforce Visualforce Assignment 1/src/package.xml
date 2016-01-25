@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>AccountListController</members>
+        <members>AccoutWithPagination</members>
+        <members>CustomLookupScreen</members>
+        <members>JSONString</members>
+        <members>ManageClassController</members>
+        <members>PDFAttachStudent</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>AccountList</members>
+        <members>AccountWithPagination</members>
+        <members>ClassPage</members>
+        <members>CustomLookuoScreen</members>
+        <members>JSONPage</members>
+        <members>ManageClassPage</members>
+        <members>RecordTypePage</members>
+        <members>ShowAsPdf</members>
+        <members>StudentDetailPage</members>
+        <members>StudentPage</members>
+        <name>ApexPage</name>
+    </types>
+    <types>
+        <members>Salesforce_Assignment</members>
+        <name>CustomApplication</name>
+    </types>
+    <version>35.0</version>
+</Package>

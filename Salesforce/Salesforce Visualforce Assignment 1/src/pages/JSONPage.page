@@ -1,0 +1,3 @@
+<apex:page Controller="JSONString" showHeader="false" sidebar="false">
+ {!jsonData}
+</apex:page>
