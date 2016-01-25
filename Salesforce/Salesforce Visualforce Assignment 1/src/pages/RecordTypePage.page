@@ -1,0 +1,5 @@
+<apex:page standardController="Contact">
+    <apex:pageBlock >
+    {!Contact.RecordType.Name}
+    </apex:pageBlock>
+</apex:page>
