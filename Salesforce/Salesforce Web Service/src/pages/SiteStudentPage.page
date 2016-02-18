@@ -1,0 +1,21 @@
+<apex:page controller="SiteStudentController">
+    <apex:form >
+        <apex:pageBlock title="Select Student Name">
+            
+            <apex:selectList value="{!selectedStdId}" size="1" >
+                <apex:actionSupport event="onchange" action="{!studentDetail}" reRender="stdDetail" />
+                <apex:selectOptions value="{!StudentNames}" />
+            </apex:selectList>
+        </apex:pageBlock>
+    </apex:form>
+    <apex:pageBlock title="Student Detail" id="stdDetail">
+        <apex:pageBlockSection rendered="{!show}" columns="1">
+            <apex:outputField value="{!student.First_Name__c}" />   
+            <apex:outputField value="{!student.Last_Name__c}"/>
+            <apex:outputField value="{!student.Sex__c}"/>
+            <apex:outputField value="{!student.Class__c}"/>
+            <apex:outputField value="{!student.DOB__c}"   />
+            <apex:outputField value="{!student.Email__c}"/>
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+</apex:page>
