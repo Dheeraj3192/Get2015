@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>TestAccountHandler</members>
+        <members>TestAccountListController</members>
+        <members>TestAccountWithPagination</members>
+        <members>TestClassStudents</members>
+        <members>TestClassTrigger</members>
+        <members>TestContactAndLeadSearch</members>
+        <members>TestContactSearch</members>
+        <members>TestContactTrigger</members>
+        <members>TestCreateStudent</members>
+        <members>TestCustomLookScreen</members>
+        <members>TestDeleteStudentController</members>
+        <members>TestGetContactDetail</members>
+        <members>TestGovernerLimitController</members>
+        <members>TestJSONString</members>
+        <members>TestManageClassCont</members>
+        <members>TestOpportunityTrigger</members>
+        <members>TestOrgSobjects</members>
+        <members>TestRelatedContactId</members>
+        <members>TestShoppingController</members>
+        <members>TestSiteStudentController</members>
+        <members>TestStackClass</members>
+        <members>TestStudentMapClass</members>
+        <members>TestStudentTrigger</members>
+        <members>TestTemplateController</members>
+        <members>TestWorkingDays</members>
+        <name>ApexClass</name>
+    </types>
+    <version>35.0</version>
+</Package>
